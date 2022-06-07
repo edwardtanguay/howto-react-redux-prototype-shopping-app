@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
 	items: [],
+	customerName: ''
 };
 
 export const cartSlice = createSlice({
@@ -13,6 +14,9 @@ export const cartSlice = createSlice({
 		},
 		removeItem: (state) => {
 			state.items.pop();
+		},
+		addCustomerName: (state, action) => {
+			state.customerName = action.payload;
 		}
 	},
 });
