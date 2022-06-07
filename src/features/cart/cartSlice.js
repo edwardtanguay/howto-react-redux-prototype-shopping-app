@@ -8,11 +8,8 @@ export const cartSlice = createSlice({
 	name: 'cart',
 	initialState,
 	reducers: {
-		addItem: (state) => {
-			const _items = state.items;
-			_items.push('nnn');
-			state.items = _items;
-			console.log(state.items);
+		addItem: (state, action) => {
+			state.items.push(action.payload);
 		},
 		removeItem: (state) => {
 			state.items.pop();

@@ -8,7 +8,8 @@ export const ShopArea = () => {
 		<div className="page_shopArea">
 			<h2>Shop Area</h2>
 			<button onClick={() => dispatch(removeItem())}>-</button>
-			<button onClick={() => dispatch(addItem())}>+</button>
+			<button onClick={() => dispatch({type: 'cart/addItem', payload: 'milk'})}>Milk</button>
+			<button onClick={() => dispatch({type: 'cart/addItem', payload: 'sugar'})}>Sugar</button>
 		</div>
 	);
 };
