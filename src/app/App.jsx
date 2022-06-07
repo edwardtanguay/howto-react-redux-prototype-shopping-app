@@ -1,6 +1,6 @@
 import './App.scss';
-import { ShopArea } from './components/ShopArea';
-import { ShoppingCart } from './components/ShoppingCart';
+import { ShopArea } from '../common/components/ShopArea';
+import { ShoppingCart } from '../common/components/ShoppingCart';
 
 function App() {
 
