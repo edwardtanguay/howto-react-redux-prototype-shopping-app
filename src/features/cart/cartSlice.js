@@ -2,7 +2,8 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
 	items: [],
-	customerName: ''
+	customerName: '',
+	coupon: false
 };
 
 export const cartSlice = createSlice({
@@ -17,6 +18,9 @@ export const cartSlice = createSlice({
 		},
 		addCustomerName: (state, action) => {
 			state.customerName = action.payload;
+		},
+		addCoupon: (state) => {
+			state.coupon = true
 		}
 	},
 });
