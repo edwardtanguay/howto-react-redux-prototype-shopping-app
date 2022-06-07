@@ -6,4 +6,28 @@ body {
 	h1 {
 		color: rgb(226, 226, 151);
 	}
+
+	.page_shopArea {
+		background-color: #555;
+		padding: 10px 20px 0 20px;
+		border: 1px solid #777;
+		border-radius: 5px;
+		margin: 0 0 20px 0;
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.page_shoppingCart {
+		background-color: #555;
+		padding: 10px 20px 0 20px;
+		border: 1px solid #777;
+		border-radius: 5px;
+		margin: 0 0 20px 0;
+
+		h2 {
+			margin: 0;
+		}
+	}
 }
