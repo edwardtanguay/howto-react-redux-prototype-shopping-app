@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { decrement, increment } from '../../features/counter/counterSlice';
+import { decrement, increment } from '../../features/cart/cartSlice';
 
 export const ShopArea = () => {
 	const dispatch = useDispatch();
