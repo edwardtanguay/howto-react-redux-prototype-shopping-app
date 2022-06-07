@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { decrement, increment } from '../../features/cart/cartSlice';
+import { removeItem, addItem } from '../../features/cart/cartSlice';
 
 export const ShopArea = () => {
 	const dispatch = useDispatch();
@@ -7,8 +7,8 @@ export const ShopArea = () => {
 	return (
 		<div className="page_shopArea">
 			<h2>Shop Area</h2>
-			<button onClick={() => dispatch(decrement())}>-</button>
-			<button onClick={() => dispatch(increment())}>+</button>
+			<button onClick={() => dispatch(removeItem())}>-</button>
+			<button onClick={() => dispatch(addItem())}>+</button>
 		</div>
 	);
 };
