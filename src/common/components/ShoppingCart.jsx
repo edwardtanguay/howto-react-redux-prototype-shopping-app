@@ -13,7 +13,7 @@ export const ShoppingCart = () => {
 			<div>items in cart: {items.length}</div>
 			<ul>
 				{items.map((item, index) => {
-					return <li key={index}>{item}</li>;
+					return <li key={index}>{item.title} - {new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(item.price)}</li>;
 				})}
 			</ul>
 		</div>
