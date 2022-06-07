@@ -11,6 +11,7 @@ export const cartSlice = createSlice({
 	initialState,
 	reducers: {
 		addItem: (state, action) => {
+			action.payload.discountedPrice = action.payload.price * (state.coupon ? .9 : 1);
 			state.items.push(action.payload);
 		},
 		removeItem: (state) => {
@@ -21,6 +22,7 @@ export const cartSlice = createSlice({
 		},
 		addCoupon: (state) => {
 			state.coupon = true
+			state.items.forEach(m => m.discountedPrice = m.price * .90)
 		}
 	},
 });

@@ -13,17 +13,30 @@ export const ShopArea = () => {
 			) : (
 				<h2>General Shop</h2>
 			)}
-			<button onClick={() => dispatch(removeItem())}>-</button>
+			<button onClick={() => dispatch(removeItem())}>remove item</button>
 			<button
 				onClick={() =>
-					dispatch({ type: 'cart/addItem', payload: {title: 'Node.js Cookbook', price: 23.99} })
+					dispatch({
+						type: 'cart/addItem',
+						payload: { title: 'Node.js Cookbook', price: 23.99 },
+					})
 				}
-			>Node.js Cookbook</button>
+			>
+				Node.js Cookbook
+			</button>
 			<button
 				onClick={() =>
-					dispatch({ type: 'cart/addItem', payload: {title: 'Building Microservices', price: 26.50} })
+					dispatch({
+						type: 'cart/addItem',
+						payload: {
+							title: 'Building Microservices',
+							price: 26.5,
+						},
+					})
 				}
-			>Building Microservices</button>
+			>
+				Building Microservices
+			</button>
 		</div>
 	);
 };
